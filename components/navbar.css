@@ -17,7 +17,7 @@
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between logo and title */
+    gap: 1px; /* Space between logo and title */
     font-size: 1.25rem; /* Adjust font size for the title */
     font-weight: bold;
     color: white;

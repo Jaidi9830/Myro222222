@@ -65,6 +65,17 @@
         0 0 40px #be95be, /* Right side glow with gradient */
         0 0 70px #be95be; /* Further intensity of glow */
 }
+.highlighted-title222 {
+    font-size: 1.7rem; /* Larger text size for "Myro" */
+    color: #ffffff; /* White text color */
+    font-weight: 700; /* Bold font */
+    text-shadow:
+        0 0 8px #4741a1, /* Outer glow using the gradient colors */
+        0 0 15px #4741a1, /* Increased outer glow */
+        0 0 25px #4741a1, /* More intense outer glow */
+        0 0 40px #be95be, /* Right side glow with gradient */
+        0 0 70px #be95be; /* Further intensity of glow */
+}
 .btn-primary {
     padding: 1rem 2.5rem; /* Spacious button */
     font-size: 1rem; /* Slightly larger font size */
