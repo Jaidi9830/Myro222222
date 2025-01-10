@@ -1,0 +1,124 @@
+.hero-section {
+    background-color: #f8f9fa; /* Light background color */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 1rem; /* Padding for mobile responsiveness */
+    text-align: center; /* Center text */
+    background-image: url('../assets/ekaterina-kryukova-14.jpg'); /* Background image */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.hero-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Fully round image */
+    object-fit: cover; /* Ensure image fits within the circle */
+    background: linear-gradient(to right, #4741a1 0%, #be95be 100%); /* Gradient effect */
+    box-shadow: 0 0 10px 5px rgba(38, 97, 121, 0.7), /* Left glow */
+                0 0 20px 10px rgba(62, 50, 132, 0.7); /* Right glow */
+    animation: rotateImage 6s linear infinite; /* Continuous rotation */
+}
+
+/* Keyframes for rotation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Initial position */
+    }
+    100% {
+        transform: rotate(360deg); /* Full rotation */
+    }
+}
+.hero-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 0 15px 8px rgba(38, 97, 121, 0.9), /* More intense left glow on hover */
+                0 0 25px 15px rgba(62, 50, 132, 0.9); /* More intense right glow on hover */
+}
+.hero-title {
+    font-size: 3rem; /* Larger, bold title */
+    color: #ffffff; /* White text color */
+    margin-top: 1rem; /* Space above the title */
+    font-weight: 700; /* Bold title */
+    position: relative; /* Ensuring proper layering of elements */
+    display: flex;
+    flex-direction: column; /* Stack "Welcome to" and "Myro" vertically */
+    align-items: center; /* Center them horizontally */
+}
+/* Style for "Welcome to" */
+.simple-title {
+    font-size: 2rem; /* Smaller text size for "Welcome to" */
+    color: #fff; /* White text color */
+    font-weight: normal; /* Normal weight for "Welcome to" */
+}
+/* Style for "Myro" */
+.highlighted-title {
+    font-size: 8rem; /* Larger text size for "Myro" */
+    color: #ffffff; /* White text color */
+    font-weight: 700; /* Bold font */
+    text-shadow:
+        0 0 8px #4741a1, /* Outer glow using the gradient colors */
+        0 0 15px #4741a1, /* Increased outer glow */
+        0 0 25px #4741a1, /* More intense outer glow */
+        0 0 40px #be95be, /* Right side glow with gradient */
+        0 0 70px #be95be; /* Further intensity of glow */
+}
+.btn-primary {
+    padding: 1rem 2.5rem; /* Spacious button */
+    font-size: 1rem; /* Slightly larger font size */
+    background-color: #000; /* Black background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 20px; /* Rounded corners for the button */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease; /* Smooth transition for color, scaling, and border */
+    position: relative; /* Make the button relative to position the icon inside */
+    padding-right: 40px; /* Add space for the icon to fit */
+}
+
+/* Icon positioned at the top-right of the button */
+.btn-primary img {
+    position: absolute;
+    top: -10px; /* Adjust position from the top */
+    right: -10px; /* Adjust position from the right */
+    width: 30px; /* Set icon size */
+    height: 30px; /* Set icon size */
+    object-fit: cover; /* Ensure the icon is properly scaled */
+}
+
+.btn-primary:hover {
+    background-color: #333; /* Darken on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    border: 2px solid #4741a1; /* Change border color to match gradient colors */
+}
+
+.social-links {
+    margin-top: 2rem; /* Space above social links */
+    position: absolute;
+    right: 100px;
+    background: #000;
+    width: 175px;
+    height: 30px;
+    border: #000;
+    border-radius: 50px;
+    
+}
+
+.social-links a {
+    font-size: 1.5rem; /* Larger icons */
+    color: #ffffff; /* Darker icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Blue color on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+
+}
+
+
+    
+    
+
+

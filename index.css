@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+}
+
+
+
+/* Apply Grandstander font to the entire site */
+body {
+    font-family: 'Grandstander', sans-serif;
+}
+
+/* You can also apply it to specific elements if needed */
+.hero-title, .nav-link, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Grandstander', sans-serif;
+}
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, rgba(20, 10, 30, 0.95), rgba(60, 30, 80, 0.8)); /* Gradient background for the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #7b3fe4, #9f63ff); /* Purplish gradient for the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #6630b8, #834cff); /* Darker gradient on hover */
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent; /* Transparent for scroll corner (for dual-axis scrollbars) */
+}
+
+/* Firefox Scrollbar Styling */
+* {
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #7b3fe4 rgba(20, 10, 30, 0.95); /* Thumb color and track color for Firefox */
+}
+
+
+  

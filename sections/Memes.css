@@ -1,0 +1,80 @@
+/* Meme Section */
+.meme-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 1)); /* Dark gradient background */
+    padding: 5rem 0; /* Vertical padding */
+    text-align: center;
+    position: relative;
+}
+
+/* Section Title */
+.meme-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: transparent;
+    
+    background-clip: text;
+    color: #fff;
+    margin-bottom: 3rem; /* Add space below the title */
+}
+
+/* Meme Slideshow Container */
+.meme-slideshow {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Meme Images Row */
+.meme-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Meme Images Styling */
+.meme-images img {
+    width: 33.33%; /* Display 3 images at a time */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px; /* Add spacing between images */
+    border: 1px solid white; /* White border around meme images */
+}
+
+/* Animation to Slide Images */
+@keyframes slideMeme {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-33.33%);
+    }
+    40% {
+        transform: translateX(-66.66%);
+    }
+    60% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(-133.33%);
+    }
+    100% {
+        transform: translateX(-166.66%);
+    }
+}
+/* Apply animation to move images */
+.meme-images {
+    animation: slideMeme 14s infinite ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meme-images img {
+        width: 100%; /* Display one image at a time on smaller screens */
+    }
+
+    /* Adjust Section Title for meme section on mobile */
+    .section-title {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+}
+

@@ -1,0 +1,238 @@
+/* Token Allocation Section */
+.token-allocation-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 1)); /* Darker gradient with purplish hue */
+    padding: 5rem 0; /* Vertical padding */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section Title */
+.token-allocation-title {
+    font-size: 3.5rem; /* Increased title size */
+    font-weight: 700;
+    color: #fff; /* Set title color to white */
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Center title for all screen sizes */
+    background: transparent; /* No gradient needed */
+    text-shadow: none; /* Removed glow effect */
+}
+
+/* Token Allocation Section Image */
+.token-allocation-image {
+    margin-top: 50px;
+    max-width: 100%; /* Ensure the image is responsive */
+    width: 200px;
+    height: 200px;    /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: to give the image rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional: add a shadow for some depth */
+    margin-bottom: 20px;
+}
+
+/* Card Container */
+.token-allocation-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Token Allocation Card */
+.token-allocation-card {
+    width: 23%;
+    height: 400px; /* Increased height */
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Enable 3D transformation */
+    transition: transform 0.6s;
+}
+
+.token-allocation-card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+/* Front of the Card */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    backface-visibility: hidden; /* Hide back of the card when flipped */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced out properly */
+}
+
+/* Front Card Styles */
+.card-front {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #4d3e4d 0%, #231629 100%);
+    background-attachment: fixed;
+    border: 1px solid,  #fff;
+}
+
+/* Back Card Styles */
+.card-back {
+    background-image: url("../assets/bg.jpg");
+    background-attachment: fixed;
+    transform: rotateY(180deg); /* Rotate the back of the card */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center; /* Center align the title */
+}
+
+/* Card Content */
+.card-content {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center; /* Ensure content is centered */
+    margin-bottom: 1.5rem;
+}
+
+/* Icon Container */
+.icon-container {
+    text-align: center;
+    margin-bottom: 1rem; /* Space between icon and card title */
+}
+
+/* Icon Styling */
+.token-allocation-card i {
+    color: #ffffff; /* Icon color */
+    font-size: 2.5rem; /* Keep icon size consistent */
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    margin-top: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Percentage */
+.percentage {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: center; /* Center the percentage text */
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .token-allocation-section {
+        padding: 3rem 0; /* Reduced padding for tablets */
+    }
+
+    .token-allocation-title {
+        font-size: 2.8rem; /* Slightly smaller title for tablet */
+    }
+
+    .token-allocation-cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .token-allocation-card {
+        width: 80%; /* Reduced width for tablets */
+        height: auto; /* Reduced card height for tablets */
+    }
+
+    .token-allocation-image {
+        margin-bottom: 0.5rem; /* Reduced bottom margin for image */
+    }
+}
+
+@media (max-width: 768px) {
+    .token-allocation-section {
+        padding: 1rem 0; /* Reduced padding for mobile */
+    }
+
+    .token-allocation-title {
+        font-size: 2.5rem; /* Reduced title size for mobile */
+    }
+
+    .token-allocation-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .token-allocation-card {
+        width: 90%; /* Further reduced width for mobile */
+        height: auto; /* Further reduced card height for mobile */
+    }
+
+    .token-allocation-image {
+        margin-bottom: 0.5rem; /* Further reduced margin for image */
+    }
+
+    .card-title {
+        font-size: 1.6rem; /* Reduced card title size */
+    }
+
+    .card-content {
+        font-size: 0.9rem; /* Reduced card content size */
+    }
+
+    .percentage {
+        font-size: 0.9rem; /* Smaller percentage text */
+    }
+}
+
+@media (max-width: 480px) {
+    .token-allocation-title {
+        font-size: 2rem; /* Smaller title size for small mobile screens */
+    }
+
+    .token-allocation-cards {
+        gap: 1.2rem; /* Less gap between cards */
+    }
+
+    .token-allocation-card {
+        width: 95%; /* Even smaller width for small mobile */
+        height: 220px; /* Reduced card height */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Smaller title size for cards */
+    }
+
+    .card-content {
+        font-size: 0.85rem; /* Smaller card content */
+    }
+
+    .percentage {
+        font-size: 0.8rem; /* Smaller percentage font */
+    }
+
+    .token-allocation-image {
+        width: 100px; /* Make image smaller on mobile */
+        height: 100px;
+        margin-bottom: 1rem; /* Adjust margin */
+    }
+}

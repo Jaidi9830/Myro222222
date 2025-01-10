@@ -1,0 +1,195 @@
+/* General Styling for Tokenomics Section */
+.tokenomics-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 1)); /* Dark gradient background */
+    padding: 40px 0;
+    padding-top: 100px;
+}
+
+.tokenomics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tokenomics-image {
+    width: 250px; /* Adjust the width of the image */
+    height: 250px; /* Maintain aspect ratio */
+    margin-bottom: 80px; /* Add space below the image */
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 25px rgba(136, 102, 141, 0.616); /* Add shadow for more depth */
+}
+
+
+.tokenomics-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.tokenomics-desc {
+    font-size: 16px;
+    color: #f8f7ff;
+    line-height: 1.5;
+}
+
+/* Styling for Tokenomics Box (Container for Economic and Revenue Model) */
+.tokenomics-box {
+    margin-bottom: 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+
+/* Styling for Revenue Cards */
+.revenue-card {
+    
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #f8f7ff;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.revenue-card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.revenue-card p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Styling for Revenue Model Layout */
+.revenue-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.col-lg-4, .col-lg-6 {
+    padding: 0 15px;
+}
+
+.col-lg-4 {
+    flex: 1 1 30%; /* Ensure cards take 30% width on large screens */
+    margin-bottom: 20px;
+}
+
+.col-lg-6 {
+    flex: 1 1 48%; /* Ensure cards take 48% width on large screens for the second row */
+}
+
+/* Styling for Vertical Divider between Cards */
+.vertical-line {
+    width: 1px;
+    background-color: #f8f7ff;
+    height: 100%;
+    margin: 0 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199px) {
+    .col-lg-4 {
+        flex: 1 1 48%; /* Two cards per row on medium screens */
+    }
+
+    .col-lg-6 {
+        flex: 1 1 100%; /* Cards take full width on smaller screens */
+    }
+
+    .revenue-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-4, .col-lg-6 {
+        flex: 1 1 100%; /* Cards will take full width on mobile screens */
+    }
+
+    .revenue-card {
+        padding: 15px; /* Reduce padding for small screens */
+    }
+
+    .tokenomics-heading {
+        font-size: 22px;
+    }
+
+    .tokenomics-desc {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tokenomics-heading {
+        font-size: 20px; /* Adjust font size on very small screens */
+    }
+
+    .tokenomics-desc {
+        font-size: 12px;
+    }
+
+    .revenue-card {
+        padding: 10px;
+    }
+}
+
+/* Styling for Revenue Cards with Hover Effects */
+.revenue-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #f8f7ff;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.revenue-card:hover {
+    transform: translateY(-10px); /* Card lifts slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%); /* Slightly brighter background on hover */
+    border-color: #9b59b6; /* Change border color to purple on hover */
+}
+
+/* Improved Heading Styling for Cards */
+.revenue-card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.revenue-card:hover .revenue-card-heading {
+    color: #9b59b6; /* Change heading color on hover */
+}
+
+/* Improved Text Styling for Cards */
+.revenue-card p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.revenue-card:hover p {
+    color: #dcdde1; /* Slightly lighter text color on hover */
+}
+

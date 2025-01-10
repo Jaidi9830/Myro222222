@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyroFan</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg"> <!-- Link to favicon -->
+    <!-- Importing Grandstander font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./components/navbar.css">
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Hero CSS -->
+    <link rel="stylesheet" href="./sections/hero.css">
+    <!-- About CSS -->
+    <link rel="stylesheet" href="./sections/about.css">
+    <!-- TokenAllocation CSS -->
+    <link rel="stylesheet" href="./sections/tokenallocation.css">
+    <!-- Roadmap CSS -->
+    <link rel="stylesheet" href="./sections/roadmap.css">
+    <!-- Howtobuy CSS -->
+    <link rel="stylesheet" href="./sections/howtobuy.css">
+    <!-- Memes CSS -->
+    <link rel="stylesheet" href="./sections/Memes.css">
+    <!-- FAQ CSS -->
+    <link rel="stylesheet" href="./sections/Faq.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="./components/footer.css">
+    <!-- Tokenomics CSS -->
+    <link rel="stylesheet" href="./sections/tokenomics.css">
+    <!-- Features CSS -->
+    <link rel="stylesheet" href="./sections/features.css">
+    <!-- WhyChoose -->
+    <link rel="stylesheet" href="./sections/whychoose.css">
+    <!-- TokendDetails CSS -->
+    <link rel="stylesheet" href="./sections/tokendDetails.css">
+    <!-- Bootstrap JS (ensure this is included before the closing body tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-dark py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/logo.svg" alt="Logo" class="logo me-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howtobuy">How To Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#memes">Memes</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggler = document.querySelector('.navbar-toggler');
+            const navMenu = document.querySelector('.navbar-nav');   
+            toggler.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section d-flex flex-column align-items-center justify-content-center", id="hero">
+        <div class="text-center">
+            <img src="./assets/MyroLogo.jpg" alt="Myro Logo" class="hero-image">
+            <h1 class="hero-title mt-3">
+                <span class="simple-title">Welcome to</span>
+                <span class="highlighted-title">$Myro</span>
+            </h1>
+            <div class="gradient-circle"></div>
+            <button class="btn btn-primary mt-3">
+                Buy $Myro
+                <img src="./assets/Paw_Heart.webp" alt="Icon" class="icon-img">
+            </button>
+            <div class="social-links mt-4">
+                <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section class="about-section py-5" id="about">
+            <div class="container text-center">
+                <h2 class="about-title mb-4">The Story of Based $Myro</h2>
+                <img src="./assets/about_picture.svg" alt="About Myro" class="about-image mb-4">
+                <div class="about-content-wrapper position-relative">
+                    <p class="about-content">
+                        Based Myro was born out of admiration for the original Myro Token, which celebrated the loyal dog of Raj Gokal, co-founder of Solana. The vision for Based Myro is to carry forward this spirit of loyalty, community, and connection, creating a space for dog lovers and crypto enthusiasts to unite under a shared banner.
+                        <br><br>
+                        Based Myro isn’t just a cryptocurrency—it’s a movement, a celebration, and a heartfelt tribute to the dogs who bring light into our lives. Inspired by the original Myro Token and powered by the love of its community, Based Myro seeks to carve out a unique place in the world of blockchain—a place where dog lovers and crypto enthusiasts can wag their tails and dream big together.
+                    </p>
+                    <img src="./assets/Dog_House.webp" alt="Icon" class="content-icon">
+                    <img src="./assets/Dogfood_Bowl.webp" alt="Icon" class="content-icon2">         
+                </div>
+            </div>
+        </section>
+
+        <!-- Token Allocation Section -->
+
+        <section class="token-allocation-section py-5" id="tokenallocation">
+            <div class="container text-center">
+                <h2 class="token-allocation-title">Token Allocation</h2>
+                <div class="token-allocation-cards">
+                    <div class="token-allocation-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="icon-container">
+                                    <i class="bi bi-coin" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <h3 class="card-title">Total Supply</h3>
+                                <p class="card-content">The total supply of tokens in circulation is fixed at 1 billion tokens.</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                                <p class="percentage">75%</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card-title">More Info</h3>
+                                <p class="card-content">The total supply is managed in a decentralized manner with community governance mechanisms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="token-allocation-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="icon-container">
+                                    <i class="bi bi-pie-chart" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <h3 class="card-title">Token Distribution</h3>
+                                <p class="card-content">Tokens are distributed to multiple sectors, like staking, rewards..</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 50%;"></div>
+                                </div>
+                                <p class="percentage">50%</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card-title">More Info</h3>
+                                <p class="card-content">Detailed distribution includes development, community rewards, staking incentives, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="token-allocation-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="icon-container">
+                                    <i class="bi bi-gear" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <h3 class="card-title">Utility</h3>
+                                <p class="card-content">The utility of tokens is used for staking, and ecosystem growth within the platform..</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                                <p class="percentage">60%</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card-title">More Info</h3>
+                                <p class="card-content">The token also facilitates staking rewards and voting on major governance decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="token-allocation-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="icon-container">
+                                    <i class="bi bi-graph-up" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <h3 class="card-title">Ecosystem Growth</h3>
+                                <p class="card-content">Tokens allocated for the development of the ecosystem..</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 65%;"></div>
+                                </div>
+                                <p class="percentage">65%</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card-title">More Info</h3>
+                                <p class="card-content">A portion of the tokens is reserved to incentivize ecosystem development and partnerships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TokenDetails Section -->
+
+<section class="token-details" id="token-details">
+    <div class="container">
+        <div class="token-title wow animate__bounceIn">
+            Token Details
+            <img src="/assets/img/calc_pict.svg" alt=""/>
+        </div>
+        <div class="token-list wow animate__bounceIn">
+            <div class="token-item">
+                <div class="token-item__label">Symbol</div>
+                <div class="token-item__value">$MYRO</div>
+            </div>
+            <div class="token-item">
+                <div class="token-item__label">Tax</div>
+                <div class="token-item__value">0/0</div>
+            </div>
+            <div class="token-item">
+                <div class="token-item__label">LP</div>
+                <div class="token-item__value">Burned Forever</div>
+            </div>
+        </div>
+        <div class="token-item wow animate__bounceIn">
+            <div class="token-item__label">Token Address</div>
+            <div class="token-item__value">
+                <p class="address" id="tokenAddress">HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4</p>
+                <svg class="copy-icon" onclick="copyAddress()" xmlns="http://www.w3.org/2000/svg" width="30" height="auto" viewBox="0 0 24 24" fill="none" stroke="#F8F7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V9" />
+                    <polyline points="16 3 21 3 21 8" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Tokenomics Section -->
+
+        <section class="tokenomics-section" id="tokenomics">
+            <div class="container tokenomics-container py-5">
+                <div class="row tokenomics-content">
+                    <div class="col-lg-12 tokenomics-left-section text-center">
+                        <img src="./assets/myrod.jpg" alt="Tokenomics Image" class="tokenomics-image mb-4">
+                        <div class="tokenomics-box">
+                            <h2 class="tokenomics-heading">
+                                <i class="bi bi-currency-exchange me-2"></i>Economic Model
+                            </h2>
+                            <p class="tokenomics-desc">
+                                The platform’s economic model is designed to create a sustainable ecosystem where the native coin is integral to transactions, staking, and governance. The model promotes a circular economy, encouraging users to hold and use the coin within the platform to gain benefits such as lower fees, rewards, and governance rights. This creates a consistent demand for the coin and incentivizes long-term holding.
+                            </p>
+                        </div>
+                        <div class="tokenomics-box">
+                            <h2 class="tokenomics-heading">
+                                <i class="bi bi-bar-chart-line me-2"></i>Revenue Model
+                            </h2>
+                            <p class="tokenomics-desc">
+                                Revenue will be generated through transaction fees, listing fees for sellers, premium services, and in-platform advertising:
+                            </p>
+                            <div class="revenue-row">
+                                <div class="col-lg-4">
+                                    <div class="revenue-card">
+                                        <h3 class="revenue-card-heading">
+                                            <i class="bi bi-wallet2 me-2"></i>Transaction Fees
+                                        </h3>
+                                        <p>
+                                            A small fee will be charged on each transaction made within the marketplace. Users who use the native coin for payments will enjoy discounted fees, incentivizing the use of our cryptocurrency.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="revenue-card">
+                                        <h3 class="revenue-card-heading">
+                                            <i class="bi bi-bag-fill me-2"></i>Listing Fees
+                                        </h3>
+                                        <p>
+                                            Sellers can list items for free, but additional features like promoted listings or featured placements will incur a fee, payable in the native coin or other supported cryptocurrencies.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="revenue-card">
+                                        <h3 class="revenue-card-heading">
+                                            <i class="bi bi-star-fill me-2"></i>Premium Features
+                                        </h3>
+                                        <p>
+                                            Subscription plans will be available for sellers and businesses, offering enhanced visibility, analytics tools, and priority customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="revenue-row">
+                                <div class="col-lg-6">
+                                    <div class="revenue-card">
+                                        <h3 class="revenue-card-heading">
+                                            <i class="bi bi-megaphone-fill me-2"></i>In-Platform Advertising
+                                        </h3>
+                                        <p>
+                                            Businesses and sellers can purchase advertising space on the platform using the native coin, increasing their visibility and reach within the marketplace.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="revenue-card">
+                                        <h3 class="revenue-card-heading">
+                                            <i class="bi bi-shield-lock-fill me-2"></i>Escrow & Dispute Fees
+                                        </h3>
+                                        <p>
+                                            A small fee for facilitating escrow services and dispute resolution through smart contracts.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Features Section -->
+
+        <section class="features">
+            <div class="container">
+                <div class="features__title wow animate__bounceIn">Features</div>
+                <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Utility of the Coin</div>
+                                            <div class="info__text">Exploring and driving the best use cases for the coin in real-world scenarios.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Charity First</div>
+                                            <div class="info__text">A portion of the revenue will be dedicated to charitable causes, ensuring a positive social impact.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Transaction Currency</div>
+                                            <div class="info__text">Primary currency for marketplace transactions, incentivized with discounts and lower fees.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Staking Rewards</div>
+                                            <div class="info__text">Earn passive income by staking coins while promoting long-term holding.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Governance Rights</div>
+                                            <div class="info__text">Community members can vote on significant updates, shaping the platform's future.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Fee Reduction</div>
+                                            <div class="info__text">Enjoy reduced fees by transacting with the native coin on the platform.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">In-Platform Advertising</div>
+                                            <div class="info__text">Use the native coin to buy ad space and promote your listings on the platform.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Decentralized Marketplace</div>
+                                            <div class="info__text">Peer-to-peer transactions without intermediaries, reducing costs and increasing speed.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Web and Mobile Access</div>
+                                            <div class="info__text">Accessible via responsive web and mobile apps for seamless transactions anywhere.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Low Fees</div>
+                                            <div class="info__text">Significantly reduced transaction fees compared to traditional e-commerce sites.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Multi-Currency Support</div>
+                                            <div class="info__text">Support for multiple cryptocurrencies, catering to a broader audience.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Security & Transparency</div>
+                                            <div class="info__text">Blockchain ensures transparent and secure transactions for all users.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">Escrow & Dispute Resolution</div>
+                                            <div class="info__text">Automated escrow services and dispute resolution via smart contracts.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="grid__block">
+                                        <div class="block__info">
+                                            <div class="info__title">User Rewards & Incentives</div>
+                                            <div class="info__text">Earn tokens for engagement and participation in platform activities.</div>
+                                        </div>
+                                        <a href="#" class="block__btn">Learn More</a>
+                                    </div>
+                                </div>
+                                    <div class="col-lg-3 col-md-6 mb-4">
+                                        <div class="grid__block">
+                                            <div class="block__info">
+                                                <div class="info__title">User Rewards & Incentives</div>
+                                                <div class="info__text">Earn tokens for engagement and participation in platform activities.!</div>
+                                            </div>
+                                            <a href="#" class="block__btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-4">
+                                        <div class="grid__block">
+                                            <div class="block__info">
+                                                <div class="info__title">Decentralized Governance</div>
+                                                <div class="info__text">Participate in key decision-making processes on the platform..</div>
+                                            </div>
+                                            <a href="#" class="block__btn">Learn More</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+
+        <section class="roadmap-section py-5" id="roadmap">
+            <div class="container text-center">
+                <h2 class="roadmap-title mb-4">Roadmap</h2>
+                <div class="roadmap-steps-wrapper">
+                    <div class="roadmap-steps">
+                        <div class="roadmap-step phase-1">
+                            <div class="roadmap-step-content">
+                                <h3 class="step-title">Phase 1: Launch and Community Building</h3>
+                                <p class="step-description">Kick-off the project with community engagement, marketing campaigns, and partnerships to build a strong foundation.</p>
+                            </div>
+                            <div class="roadmap-icon right">
+                                <img src="./assets/Dog_Paw.webp" alt="Phase 1 Icon" />
+                            </div>
+                        </div>
+                        <div class="roadmap-step phase-2">
+                            <div class="roadmap-icon left">
+                                <img src="./assets/Dog_Paw.webp" alt="Phase 2 Icon" />
+                            </div>
+                            <div class="roadmap-step-content">
+                                <h3 class="step-title">Phase 2: Meme, HODL, Chill</h3>
+                                <p class="step-description">Focus on growing the community through memes, encouraging holders, and spreading awareness about the project.</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-step phase-3">
+                            <div class="roadmap-step-content">
+                                <h3 class="step-title">Phase 3: CMC and CG Listing / Airdrops</h3>
+                                <p class="step-description">Achieve major listings on CoinMarketCap (CMC) and CoinGecko (CG), along with airdrops to attract new investors.</p>
+                            </div>
+                            <div class="roadmap-icon right">
+                                <img src="./assets/Dog_Paw.webp" alt="Phase 3 Icon" />
+                            </div>
+                        </div>
+                        <div class="roadmap-step phase-4">
+                            <div class="roadmap-icon left">
+                                <img src="./assets/Dog_Paw.webp" alt="Phase 4 Icon" />
+                            </div>
+                            <div class="roadmap-step-content">
+                                <h3 class="step-title">Phase 4: Donate to Canine Charities</h3>
+                                <p class="step-description">Give back by donating a portion of the funds to reputable canine charities, supporting animal welfare.</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-step phase-5">
+                            <div class="roadmap-step-content">
+                                <h3 class="step-title">Phase 5: NFT Collection and CEX Listing</h3>
+                                <p class="step-description">Launch an NFT collection and aim for listings on Centralized Exchanges (CEX) to increase liquidity and exposure.</p>
+                            </div>
+                            <div class="roadmap-icon right">
+                                <img src="./assets/Dog_Paw.webp" alt="Phase 5 Icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let steps = document.querySelectorAll('.roadmap-step');
+                let stepIndex = 0;
+                let lastScrollTop = 0; 
+                function showNextStep() {
+                    if (stepIndex < steps.length) {
+                        steps[stepIndex].classList.add('visible');
+                        stepIndex++;
+                    }
+                }
+                function hidePreviousStep() {
+                    if (stepIndex > 0) {
+                        steps[stepIndex - 1].classList.remove('visible');
+                        stepIndex--;
+                    }
+                }
+                showNextStep();
+                window.addEventListener('scroll', function() {
+                    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (currentScrollTop > lastScrollTop) {
+                        let stepPosition = steps[stepIndex]?.getBoundingClientRect().top;
+                        if (stepPosition <= window.innerHeight * 0.50) {
+                            showNextStep();
+                        }
+                    } else {
+                        let stepPosition = steps[stepIndex - 1]?.getBoundingClientRect().top;
+                        if (stepPosition >= window.innerHeight * 0.50) {
+                            hidePreviousStep();
+                        }
+                    } 
+                    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+                });
+            });
+        </script>
+
+        <!-- HowToBuy Section -->
+
+        <section class="how-to-buy-section py-5" id="howtobuy">
+            <div class="container">
+                <h2 class="howtobuy-title text-center mb-4">How to Buy $MYRO</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="step">
+                            <img src="./assets/Dog_Bone.webp" alt="Step 1 Icon" class="step-icon-left">
+                            <div class="step-image">
+                                <img src="./assets/Wallet_Icon.webp" alt="3D Step 1 Image" class="img-fluid">
+                            </div>
+                            <div class="step-content">
+                                <h3>Step 1: Install Coinbase Wallet</h3>
+                                <p>You can get it at The App Store or as a browser extension.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <img src="./assets/myrosw.jpg" alt="How to Buy $MYRO" class="how-to-buy-image img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="step">
+                            <img src="./assets/Dogfood_Bag.webp" alt="Step 2 Icon" class="step-icon-left">
+                            <div class="step-image">
+                                <img src="./assets/arrow_icon.webp" alt="3D Step 2 Image" class="img-fluid">
+                            </div>
+                            <div class="step-content">
+                                <h3>Step 2: Get ETH on Base Network</h3>
+                                <p>Transfer directly to your Base Network or send it to your Ethereum wallet and bridge ETH to Base via the official Coinbase Bridge or Orbiter Finance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="step">
+                            <img src="./assets/Dog_Food.webp" alt="Step 3 Icon" class="step-icon-left">
+                            <div class="step-image">
+                                <img src="./assets/coins_Icon.webp" alt="3D Step 3 Image" class="img-fluid">
+                            </div>
+                            <div class="step-content">
+                                <h3>Step 3: Snatch some $MYRO</h3>
+                                <p>Swap your ETH for $MYRO using our official CA found on our page!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhyChoose Section -->
+
+         <section class="why-choose">
+                <div class="container">
+                    <div class="why-choose__title wow animate__bounceIn">Why choose $MYRO?
+                </div>
+                    <div class="why-choose__grid">
+                        <div class="grid__block1 n">
+                            <img src="./assets/choose_1.svg" alt=""/>Myro is a viral narrative based on Solana Co-Founder Raj Gokal’s pet
+                               dog, becoming a staple in the Solana memecoin space.
+                        </div>
+                        <div class="grid__block1 ">
+                            <img src="./assets/choose_2.svg" alt=""/>Myro will be more than just a memecoin, featuring several unique use
+                               cases and utilities that are beneficial to the long term growth of
+                               the Solana Ecosystem.
+                        </div>
+                        <div class="grid__block1 ">
+                            <img src="./assets/choose_3.svg" alt=""/>The Myro movement is like no other on the Solana blockchain,
+                              bringing dog lovers from all around the crypto space and uniting
+                              them into one.
+                        </div>
+                        <div class="grid__block1 ">
+                            <img src="./assets/choose_4.svg" alt=""/>With the Solana blockchain and coin making a huge return over the
+                               last few months, it’s time for Myro to come in and set the stardard
+                               for memecoins on Solana. There's a new dog in town.
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+        <!-- Meme Section -->
+         
+         <section class="meme-section", id="memes">
+                <h2 class="meme-title">Memes</h2>
+                <div class="meme-slideshow">
+                    <div class="meme-images">
+                        <img src="./assets/myrod.jpg" alt="Meme 1">
+                        <img src="./assets/myrosw.jpg" alt="Meme 2">
+                        <img src="./assets/MyroBlue.jpg" alt="Meme 3">
+                        <img src="./assets/MyroLogo.jpg" alt="Meme 4">
+                        <img src="./assets/myrod.jpg" alt="Meme 1">
+                        <img src="./assets/myrosw.jpg" alt="Meme 2">
+                        <img src="./assets/MyroBlue.jpg" alt="Meme 3">
+                        <img src="./assets/MyroLogo.jpg" alt="Meme 4">
+                    
+                    </div>
+                </div>
+         </section>
+
+         <!-- FAQ Section -->
+
+         <section class="faq-section">
+                <div class="container">
+                    <h2 class="faq-title">FAQ</h2>
+                    <div class="faq-card">
+                        <div class="faq-header" onclick="toggleFAQ(1)">
+                            <h3>What makes Based Myro unique?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-content" id="faq-1">
+                            <p>At its core, Based Myro is more than just a token—it's a symbol of the bond between people and their pets and a celebration of the possibilities that arise when passionate individuals come together.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-header" onclick="toggleFAQ(2)">
+                            <h3>Why should I buy Based Myro?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-content" id="faq-2">
+                            <p>If you love dogs, crypto, and good-natured fun, Based Myro might be the perfect fit for you. It’s a memecoin with character, offering a chance to participate in a lighthearted yet growing crypto ecosystem while supporting a coin that values community, humor, and ambition.</p>
+                        </div>
+                    </div>     
+                    <div class="faq-card">
+                        <div class="faq-header" onclick="toggleFAQ(3)">
+                            <h3>Will Based Myro be listed on any CEXs?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-content" id="faq-3">
+                            <p>Yes. Based Myro aims to be listed on centralized exchanges as outlined in Phase 5 of the roadmap.</p>
+                        </div>
+                    </div>
+                </div>
+         </section>
+         
+         
+         <script>
+                // Function to toggle the FAQ visibility
+            function toggleFAQ(faqId) {
+            const faqContent = document.getElementById('faq-' + faqId);
+            const faqToggle = faqContent.previousElementSibling.querySelector('.faq-toggle');
+            // Toggle the 'open' class to show or hide the answer
+            if (faqContent.classList.contains('open')) {
+                faqContent.classList.remove('open');
+                faqToggle.textContent = '+'; // Change sign to "+"
+            } else {
+                faqContent.classList.add('open');
+                faqToggle.textContent = '-'; // Change sign to "-"
+            }
+            }
+         </script>
+
+        <!-- Footer -->
+
+         <footer class="footer py-5">
+                <div class="container text-center">
+                    <div class="disclaimer mb-3">
+                        <p class="text-white">
+                            Disclaimer: Based $Myro is a community-driven cryptocurrency project. Please do your own research before making any investment. We do not offer financial advice.
+                        </p>
+                    </div>
+                    <div class="copyright mb-3">
+                        <p>&copy; 2025 Based $Myro. All rights reserved.</p>
+                    </div>
+                </div>
+         </footer>
+
+         <script>
+                    function copyAddress() {
+            var copyText = document.getElementById("tokenAddress");
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+
+            
+            }
+
+         </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</body>
+</html>

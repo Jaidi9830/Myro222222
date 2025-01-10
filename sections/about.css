@@ -1,0 +1,216 @@
+/* About Section */
+.about-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(20, 10, 30, 1)), /* Dark black base */
+                linear-gradient(to top, rgba(100, 0, 100, 0.8), rgba(50, 0, 100, 0.6)); /* Strong purple gradient */
+    padding: 5rem 0; /* Vertical padding */
+    position: relative; /* Position for background elements */
+    overflow: hidden; /* Prevent overflow of background icons */
+}
+
+/* Background Gradients and Icons */
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 100%;
+    border-radius: 20px; /* Soft rounded edges */
+    z-index: 1; /* Place behind content */
+}
+
+.about-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/dog-icon-pattern.svg'); /* Dog-related icon pattern */
+    background-repeat: repeat; /* Repeat icons across the background */
+    background-size: 150px 150px; /* Adjust size of the icons */
+    opacity: 0.1; /* Subtle icon visibility */
+    z-index: 0; /* Place behind the gradient */
+}
+
+/* About Title */
+.about-title {
+    font-size: 4rem; /* Increased title size */
+    font-weight: 700; /* Bold text */
+    color: #fff; /* Set title color to white */
+    position: relative; /* Ensure above background */
+    z-index: 2;
+    text-align: center; /* Centered title */
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px #fff; /* Outer glow */
+}
+
+/* About Image */
+.about-image {
+    width: 300px; /* Fixed image size */
+    height: 300px; /* Maintain aspect ratio */
+    position: relative; /* Stack above background */
+    z-index: 2;
+    margin: 2rem 0; /* Add space around the image */
+}
+
+/* About Content Wrapper */
+.about-content-wrapper {
+    padding: 2rem; /* Space around the content */
+    margin: 2rem auto; /* Centering */
+    max-width: 800px; /* Maximum width */
+    position: relative; /* Ensure proper layering */
+    z-index: 2;
+    text-align: center; /* Center the content */
+    border: 1px solid white; /* White border around the content */
+    border-radius: 15px; /* Rounded corners for smoother look */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    background: rgba(255, 255, 255, 0.05); /* Slight background color for contrast */
+}
+
+/* Content Icons */
+.content-icon {
+    position: absolute;
+    top: -120px; /* Adjust to place the icon above the border */
+    right: -70px; /* Adjust to place the icon outside the right border */
+    width: 190px; /* Icon size */
+    height: 190px; /* Icon size */
+    object-fit: cover; /* Ensure the icon fits nicely */
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-icon2 {
+    position: absolute;
+    bottom: -70px; /* Adjust to place the icon below the border */
+    left: -60px; /* Adjust to place the icon outside the left border */
+    width: 150px; /* Icon size */
+    height: 150px; /* Icon size */
+    object-fit: cover; /* Ensure the icon fits nicely */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Content Text */
+.about-content {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #fff; /* White text */
+    line-height: 1.8; /* Proper spacing */
+    text-align: justify; /* Align text neatly */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 3rem 0; /* Reduced padding for tablets */
+    }
+
+    .about-title {
+        font-size: 3rem; /* Reduced title size for tablets */
+    }
+
+    .about-image {
+        width: 200px; /* Smaller image for tablets */
+        height: 200px;
+    }
+
+    .about-content-wrapper {
+        max-width: 700px; /* Adjust max-width for better fit */
+    }
+
+    .about-content {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    /* Icon Adjustments */
+    .content-icon {
+        width: 150px; /* Reduced size for tablets */
+        height: 150px;
+        top: -100px; /* Adjust icon placement */
+        right: -50px;
+    }
+
+    .content-icon2 {
+        width: 120px; /* Reduced size for tablets */
+        height: 120px;
+        bottom: -50px;
+        left: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 0; /* Reduced padding for mobile */
+    }
+
+    .about-title {
+        font-size: 2.5rem; /* Further reduced title size for mobile */
+    }
+
+    .about-image {
+        width: 150px; /* Even smaller image for mobile */
+        height: 150px;
+    }
+
+    .about-content-wrapper {
+        max-width: 90%; /* Make wrapper take up more space */
+    }
+
+    .about-content {
+        font-size: 1rem; /* Adjust font size for mobile */
+        line-height: 1.6; /* Adjust line height for mobile */
+        text-align: left; /* Align text to the left */
+    }
+
+    /* Icon Adjustments */
+    .content-icon {
+        width: 120px; /* Smaller icons for mobile */
+        height: 120px;
+        top: -80px;
+        right: -40px;
+    }
+
+    .content-icon2 {
+        width: 100px; /* Smaller icons for mobile */
+        height: 100px;
+        bottom: -40px;
+        left: -30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem; /* Smaller title size for smaller screens */
+    }
+
+    .about-image {
+        width: 120px; /* Smaller image for smaller screens */
+        height: 120px;
+    }
+
+    .about-content-wrapper {
+        padding: 1rem; /* Reduced padding */
+    }
+
+    .about-content {
+        font-size: 0.9rem; /* Smaller text for smaller screens */
+        line-height: 1.4; /* Adjust line height */
+        text-align: left; /* Keep text left aligned for readability */
+    }
+
+    /* Icon Adjustments */
+    .content-icon {
+        width: 100px; /* Very small icons for small screens */
+        height: 100px;
+        top: -60px;
+        right: -30px;
+    }
+
+    .content-icon2 {
+        width: 80px; /* Very small icons for small screens */
+        height: 80px;
+        bottom: -30px;
+        left: -20px;
+    }
+}

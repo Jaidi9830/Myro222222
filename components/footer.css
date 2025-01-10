@@ -1,0 +1,94 @@
+/* Footer Section */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-size: 1rem; /* Font size for text */
+    border-top: 2px solid #fff; /* White top border */
+    text-align: center;
+    background-image: url("../assets/footer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-bottom: 1.5rem; /* Space below links */
+}
+
+.footer-link {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    font-weight: 500; /* Semi-bold font */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.footer-link:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-bottom: 1.5rem; /* Space below social media icons */
+}
+
+.social-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #fff; /* White color */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icon:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Disclaimer */
+.disclaimer {
+    font-size: 0.9rem; /* Smaller font for disclaimer */
+    color: #ddd; /* Lighter color for disclaimer text */
+    margin-bottom: 1.5rem; /* Spacing below disclaimer */
+}
+
+/* Contact Information */
+.contact-info {
+    font-size: 1rem; /* Normal font size for contact info */
+    color: #fff;
+    margin-bottom: 1.5rem; /* Spacing below contact information */
+}
+
+.contact-info a {
+    color: #007bff; /* Blue color for email link */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Copyright Text */
+.copyright {
+    font-size: 0.9rem; /* Smaller text size for copyright */
+    color: #fff; /* White text */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer-links {
+        margin-bottom: 1rem; /* Reduce space between links */
+    }
+
+    .social-icon {
+        font-size: 1.3rem; /* Smaller icons on mobile */
+    }
+
+    .copyright {
+        font-size: 0.8rem; /* Smaller copyright text on mobile */
+    }
+
+    .disclaimer,
+    .contact-info {
+        font-size: 0.8rem; /* Smaller font for mobile */
+    }
+}

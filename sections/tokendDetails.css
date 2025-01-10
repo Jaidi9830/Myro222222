@@ -1,0 +1,127 @@
+/* General Styles for TokenDetails Section */
+.token-details {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 1)); /* Darker gradient */
+}
+
+/* Container for layout */
+.token-details .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add some padding for small screens */
+}
+
+.address{
+  margin-top: 10px;
+  margin-right: 2%;
+  font-family: 'Grandstander';
+}
+
+/* Title */
+.token-title {
+  margin-top: 200px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #F8F7FF;
+  font-family: Grandstander, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Mobile responsiveness for the title */
+@media screen and (max-width: 500px) {
+  .token-title {
+    font-size: 46px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 120px;
+  }
+}
+
+/* Token List Container */
+.token-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin-bottom: 32px;
+}
+
+/* Mobile responsiveness for token list */
+@media screen and (max-width: 500px) {
+  .token-list {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    grid-gap: 16px;
+  }
+}
+
+/* Token Item Styling */
+.token-item {
+  padding: 32px;
+  width: 100%;
+  border-radius: 24px;
+  border: 4px solid #F8F7FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Token Item Label Styling */
+.token-item__label {
+  color: #F8F7FF;
+  font-family: Grandstander, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Token Item Value Styling */
+.token-item__value {
+  color: #F8F7FF;
+  text-align: right;
+  font-family: 'Roboto', sans-serif; /* Font applied to token address */
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; /* Ensures that the icon stays inside this container */
+  padding-right: 40px; /* Add space for the icon */
+}
+
+/* Mobile adjustments for token item values */
+@media screen and (max-width: 500px) {
+  .token-item__value {
+    font-size: 8px; /* Increased font size for better readability */
+    justify-content: flex-start;
+    padding-right: 20px; /* Less padding on mobile */
+  }
+  .token-item__label {
+    font-size: 9px; /* Slightly smaller font size for labels */
+  }
+
+}
+
+/* Copy Icon Styling */
+.copy-icon {
+  cursor: pointer;
+  position: absolute; /* Positions it relative to the token-item__value container */
+  right: 10px; /* Ensures the icon stays inside the value container */
+  top: 50%;
+  transform: translateY(-50%); /* Centers the icon vertically */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Adjustments for mobile */
+@media screen and (max-width: 500px) {
+  .copy-icon {
+    width: 20px; /* Adjusted size for mobile */
+    height: 20px; /* Ensure the height is proportional */
+    margin-left: 15px !important;
+  }
+}

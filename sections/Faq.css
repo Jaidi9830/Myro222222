@@ -1,0 +1,142 @@
+/* FAQ Section */
+.faq-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(20, 10, 30, 1)); /* Dark gradient background */
+    padding: 5rem 2rem; /* Reduce padding on smaller screens */
+    display: flex;
+    
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure section takes full height of the viewport */
+}
+
+/* Section Title */
+.faq-title {
+    font-size: 3.5rem; /* Larger title size for better visibility */
+    font-weight: 700;
+    color: white; /* White color for the title */
+    margin-bottom: 3rem; /* Add space below the title */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Space between letters */
+}
+
+/* FAQ Container */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center FAQ cards horizontally */
+    justify-content: center;
+    width: 100%; /* Take full width of parent */
+    max-width: 800px; /* Max width for better control */
+    margin: 0 auto; /* Auto margin to center horizontally */
+    padding: 0 1rem; /* Add padding to prevent overflow on smaller screens */
+}
+
+/* FAQ Cards */
+.faq-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for FAQ cards */
+    width: 800pxpx; /* Full width on smaller screens */
+    max-width: 100%; /* Max width for larger screens */
+    border-radius: 10px;
+    margin-bottom: 2rem; /* Space between cards */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* White shadow */
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid white; /* White border around FAQ cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for FAQ Cards */
+.faq-card:hover {
+    transform: translateY(-5px); /* Slight movement on hover */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3); /* Intensified shadow on hover */
+}
+
+/* FAQ Header (Question) */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white; /* White text for question */
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff; /* Dark border below question */
+}
+
+/* FAQ Toggle Button (+) */
+.faq-toggle {
+    font-size: 2rem;
+    color: #f4f4f7;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.faq-toggle:hover {
+    color: #4741a1; /* Change color on hover */
+}
+
+/* FAQ Content (Answer) */
+.faq-content {
+    display: none;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white; /* White text for answers */
+    padding-top: 1rem;
+}
+
+/* FAQ Content when Visible */
+.faq-content.open {
+    display: block;
+}
+
+/* Responsive Design for Mobile & Tablet */
+@media (max-width: 1024px) {
+    .faq-title {
+        font-size: 3rem; /* Adjust title size for tablets */
+    }
+
+    .faq-container {
+        padding: 0 1rem; /* Add padding to prevent overflow */
+    }
+
+    .faq-card {
+        width: 90%; /* Reduce card width for tablets */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    .faq-header {
+        font-size: 1.5rem; /* Adjust question font size */
+    }
+
+    .faq-content {
+        font-size: 1rem; /* Slightly smaller font for answers */
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 2.5rem; /* Smaller title size on mobile */
+        margin-bottom: 2rem; /* Adjust space below title */
+    }
+
+    .faq-container {
+        padding: 0 1rem; /* Ensure padding for mobile screens */
+    }
+
+    .faq-card {
+        width: 95%; /* Increase width for mobile */
+        padding: 1.2rem; /* Adjust padding for smaller screens */
+    }
+
+    .faq-header {
+        font-size: 1.4rem; /* Adjust question font size */
+        padding: 0.8rem; /* Less padding on smaller screens */
+    }
+
+    .faq-content {
+        font-size: 1rem; /* Smaller text for answers */
+    }
+}
